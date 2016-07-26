@@ -1,7 +1,7 @@
 <?php
 ob_start();
-define('API_KEY','محل توکن شما');
-$admin = '68747297';
+define('API_KEY','197850164:AAFdeK-42BPrrkSRoMqPhUPgpd98yZPy0QQ');
+$admin = '46853604';
 include("telegram.php");
 $telegram = new Telegram(API_KEY);
 function httpt($method,$datas=[]){
@@ -38,7 +38,7 @@ if(isset($update->message->text)){
       'reply_markup'=>json_encode([
         'inline_keyboard'=>[
           [
-            ['text'=>'Time 🔵','callback_data'=>'time']
+            ['text'=>'Time ⏱','callback_data'=>'time']
           ]
         ]
       ])
@@ -61,7 +61,7 @@ if(isset($update->message->text)){
 دریافت مشخصات شما
 
 
-Powered by @taylor_team
+سازنده:@arshiahp
 ",
       'parse_mode'=>'HTML',
       'reply_markup'=>json_encode([
